@@ -1,12 +1,12 @@
 
-import React, { use, useState } from 'react';
+import { use } from 'react';
+import { useState } from 'react';
 import Country from '../Country/Country';
 import './Countries.css'
 
 const countries = ({CountriesPromise}) => {
 
     const [visitedCountries , setVisitedCountries] = useState([]);
-
     const updateVisitedCountries = (country) => {
     
         const newVisitedCountries = [...visitedCountries,country];
@@ -19,7 +19,7 @@ const countries = ({CountriesPromise}) => {
     return (
         <div>
             <h1>In Different Countries:{allCountries.length}</h1>
-            <h3>Total Country Visited:</h3>
+            <h3>Total Country Visited: {visitedCountries.length}</h3>
            <div className='countries'>
              {
                 allCountries.map(country => <Country 
