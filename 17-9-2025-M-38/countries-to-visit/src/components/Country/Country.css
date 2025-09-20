@@ -1,8 +1,12 @@
 
 .country{
-    border: 2px solid blueviolet ;
+    border: 2px solid palevioletred ;
     margin: 20px;
     padding: 20px;
     border-radius: 20px;
 
+}
+
+.country-visited{
+    background-color: peachpuff;
 }
